@@ -1,0 +1,11 @@
+{
+  "name": "smart-lost-found",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js",
+    "test": "npm --prefix server test"
+  }
+}
